@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - STWH 60th Anniversary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>STWH</h1>
+                    <span>60th Anniversary</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="photos.html" class="active">Photos</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="elders-deacons.html">Elders & Deacons</a></li>
+                    <li><a href="weba.html">WEBA</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Memories from our ministries and special events</p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="youth">Youth Ministry</button>
+                <button class="filter-btn" data-filter="kids">Kids Ministry</button>
+                <button class="filter-btn" data-filter="sister">Sister Ministry</button>
+                <button class="filter-btn" data-filter="fellowship">Fellowship</button>
+                <button class="filter-btn" data-filter="special">Special Meeting</button>
+                <button class="filter-btn" data-filter="ministry">Ministry & Fellowship</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Youth Ministry Photos -->
+                <div class="gallery-item" data-category="youth">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Youth Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Youth Ministry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="youth">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Youth Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Youth Ministry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="youth">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Youth Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Youth Ministry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Ministry Photos -->
+                <div class="gallery-item" data-category="kids">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Kids Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Kids Ministry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kids">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Kids Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Kids Ministry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kids">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Kids Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Kids Ministry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sister Ministry Photos -->
+                <div class="gallery-item" data-category="sister">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Sister Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Sister Ministry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sister">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Sister Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Sister Ministry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="sister">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Sister Ministry Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Sister Ministry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fellowship Photos -->
+                <div class="gallery-item" data-category="fellowship">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Fellowship Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Fellowship</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="fellowship">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Fellowship Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Fellowship</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="fellowship">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Fellowship Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Fellowship</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Meeting Photos -->
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Special Meeting Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Special Meeting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Special Meeting Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Special Meeting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="special">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Special Meeting Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Special Meeting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ministry & Fellowship Photos -->
+                <div class="gallery-item" data-category="ministry">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Ministry & Fellowship Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Ministry & Fellowship</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ministry">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Ministry & Fellowship Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Ministry & Fellowship</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ministry">
+                    <div class="gallery-item-inner">
+                        <div class="gallery-placeholder">
+                            <span class="placeholder-icon">📸</span>
+                            <span class="placeholder-text">Ministry & Fellowship Photo</span>
+                        </div>
+                        <div class="gallery-overlay">
+                            <span class="gallery-category">Ministry & Fellowship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>STWH</h3>
+                    <p>Shalem Telugu Worship Home</p>
+                    <p>Celebrating 60 Years of Faith & Fellowship</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="elders-deacons.html">Elders & Deacons</a></li>
+                        <li><a href="weba.html">WEBA</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ministries</h4>
+                    <ul>
+                        <li>Youth Ministry</li>
+                        <li>Kids Ministry</li>
+                        <li>Sister Ministry</li>
+                        <li>Fellowship</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shalem Telugu Worship Home. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
