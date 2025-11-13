@@ -80,7 +80,7 @@ body::after {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1.25rem 0;
+    padding: 0.75rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -88,6 +88,52 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.75rem;
+}
+
+.logo-image {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.logo-text-top {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: 1px;
+    margin-bottom: 0.1rem;
+}
+
+.logo-text-bottom {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .logo h1 {
@@ -113,7 +159,7 @@ body::after {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -123,8 +169,8 @@ body::after {
     font-weight: 500;
     transition: var(--transition);
     position: relative;
-    padding: 0.5rem 0;
-    font-size: 0.95rem;
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
 
@@ -213,6 +259,7 @@ body::after {
     z-index: 2;
     max-width: 1000px;
     padding: 3rem 2rem;
+    margin-top: -5rem;
 }
 
 .hero-title {
@@ -689,6 +736,36 @@ section {
     flex: 1;
     min-width: 0;
     text-align: left;
+    overflow: hidden;
+}
+
+.history-image {
+    width: 280px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.history-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.history-image-left {
+    float: left;
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+
+.history-image-right {
+    float: right;
+    margin-left: 1.5rem;
+    margin-right: 0;
 }
 
 .timeline-text-content h3 {
@@ -696,6 +773,7 @@ section {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
     line-height: 1.4;
+    clear: both;
 }
 
 .timeline-text-content p {
@@ -1685,7 +1763,7 @@ section {
 
 .history-intro {
     margin-bottom: 3rem;
-    text-align: center;
+    text-align: left;
 }
 
 .history-intro p {
@@ -1693,7 +1771,7 @@ section {
     line-height: 1.8;
     color: var(--text-dark);
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
     opacity: 1;
 }
 
@@ -1765,6 +1843,36 @@ section {
     flex: 1;
     min-width: 0;
     text-align: left;
+    overflow: hidden;
+}
+
+.history-timeline-item .history-image {
+    width: 280px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.history-timeline-item .history-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.history-timeline-item .history-image-left {
+    float: left;
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+
+.history-timeline-item .history-image-right {
+    float: right;
+    margin-left: 1.5rem;
+    margin-right: 0;
 }
 
 .history-timeline-item .timeline-text-content h3 {
@@ -1772,6 +1880,7 @@ section {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
     line-height: 1.4;
+    clear: both;
 }
 
 .history-timeline-item .timeline-text-content p {
@@ -2445,9 +2554,26 @@ section {
         display: flex;
     }
 
+    .logo-image {
+        height: 45px;
+        width: auto;
+    }
+
+    .logo-text-top {
+        font-size: 1.2rem;
+    }
+
+    .logo-text-bottom {
+        font-size: 0.9rem;
+    }
+
+    .logo-link {
+        gap: 0.5rem;
+    }
+
     .nav-menu {
         position: fixed;
-        top: 70px;
+        top: 60px;
         left: -100%;
         width: 100%;
         background: var(--bg-darker);
@@ -2515,6 +2641,14 @@ section {
         width: 100%;
     }
 
+    .history-image {
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1rem 0 !important;
+        display: block;
+    }
+
     .timeline-image {
         max-height: 200px;
     }
@@ -2533,6 +2667,14 @@ section {
 
     .history-timeline-item .timeline-text-content {
         width: 100%;
+    }
+
+    .history-timeline-item .history-image {
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1rem 0 !important;
+        display: block;
     }
 
     .history-timeline-item .timeline-image {
@@ -2721,6 +2863,23 @@ section {
 }
 
 @media (max-width: 480px) {
+    .logo-image {
+        height: 40px;
+        width: auto;
+    }
+
+    .logo-text-top {
+        font-size: 1rem;
+    }
+
+    .logo-text-bottom {
+        font-size: 0.8rem;
+    }
+
+    .logo-link {
+        gap: 0.4rem;
+    }
+
     .hero {
         background-attachment: scroll;
         background-size: cover;
@@ -2729,6 +2888,7 @@ section {
 
     .hero-content {
         padding: 2rem 1rem;
+        margin-top: -3rem;
     }
 
     .hero-title {
