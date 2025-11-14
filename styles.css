@@ -1339,6 +1339,45 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    position: relative;
+}
+
+.contact-wrapper::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 1.5px);
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--primary-color);
+    opacity: 0.5;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+}
+
+.assembly-section {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+}
+
+.assembly-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow), var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.assembly-intro {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-size: 1rem;
 }
 
 .contact-info h2 {
@@ -1383,42 +1422,9 @@ section {
     line-height: 1.8;
 }
 
-.contact-tabs {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    border-bottom: 2px solid var(--border-color);
-}
+/* Contact tabs removed - now showing both sections side by side */
 
-.contact-tab {
-    padding: 1rem 2rem;
-    background: transparent;
-    border: none;
-    border-bottom: 3px solid transparent;
-    color: var(--text-light);
-    font-size: 1.125rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    margin-bottom: -2px;
-}
-
-.contact-tab:hover {
-    color: var(--text-dark);
-}
-
-.contact-tab.active {
-    color: var(--primary-color);
-    border-bottom-color: var(--primary-color);
-    font-weight: 700;
-}
-
-.assembly-section {
-    margin-bottom: 2rem;
-    animation: fadeIn 0.3s ease;
-}
+/* Removed duplicate .assembly-section - now defined above */
 
 @keyframes fadeIn {
     from {
@@ -1435,9 +1441,10 @@ section {
     color: var(--primary-color);
     font-size: 1.75rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--border-color);
+    text-shadow: none;
 }
 
 .contact-form-wrapper h2 {
@@ -2337,12 +2344,24 @@ section {
 }
 
 .maps-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
     position: relative;
 }
 
 .map-wrapper {
     width: 100%;
     margin-bottom: 1rem;
+}
+
+.map-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: none;
 }
 
 .map-wrapper iframe {
@@ -2612,17 +2631,25 @@ section {
 
     .contact-wrapper {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
-    .contact-tabs {
-        flex-wrap: wrap;
-        gap: 0.5rem;
+    .contact-wrapper::after {
+        display: none;
     }
 
-    .contact-tab {
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
+    .assembly-section {
+        padding: 2rem 1.5rem;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
+
+    .maps-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Contact tabs removed */
 
     .anniversary-event-section {
         padding: 1.5rem 0;
